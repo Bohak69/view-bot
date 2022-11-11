@@ -9,7 +9,7 @@ import requests, time, random, bs4, sys, re, base64, urllib.parse
 class Main:
     def __init__(self):
 
-        self.url = "https://zefoy.com/"
+        self.url = "https://youtube.com/channel/UCTGEvS9qJwravioB_xBHD8Ahttps://youtube.com/channel/UCTGEvS9qJwravioB_xBHD8A"
         self.session = requests.session()
 
     def solve_captcha(self, sessid):
@@ -18,7 +18,7 @@ class Main:
             response = self.session.get(
                 self.url + "a1ef290e2636bf553f39817628b6ca49.php",
                 headers={
-                    "origin": "https://zefoy.com",
+                    "origin": "https://youtube.com/channel/UCTGEvS9qJwravioB_xBHD8Ahttps://youtube.com/channel/UCTGEvS9qJwravioB_xBHD8A",
                     "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36",
                     "x-requested-with": "XMLHttpRequest",
                     "cookie": f"PHPSESSID={sessid}",
